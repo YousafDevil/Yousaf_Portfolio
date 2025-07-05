@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yousaf - Professional Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="animated-bg"></div>
+
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">Yousaf<span>_Anon</span></a>
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger-menu" aria-label="Open Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-container">
+        <div class="hero-content" data-aos="fade-right">
+          <h2 class="typing-effect">Hi, I'm <span>Yousaf</span></h2>
+          <h3>Frontend Dev | Tech Explorer</h3>
+          <p>Building fast, aesthetic websites and diving deep into the digital world — from design to darkweb research, just for knowledge & curiosity. Let's connect.</p>
+          <div class="buttons">
+            <a target="_blank" href="https://wa.me/18257733821" class="btn">Hire Me</a>
+            <a target="_blank" href="https://t.me/X_FearleSs_Men" class="btn outline">Let's Talk</a>
+          </div>
+        </div>
+        <figure class="hero-image" data-aos="fade-left" data-aos-duration="1200">
+  <img src="Picsart_25-07-05_15-10-10-2.jpg" alt="Anonymous hooded figure" class="profile-pic">
+</figure>
+
+      </div>
+    </section>
+
+    <section id="about" class="about" data-aos="fade-up">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <p class="about-text">A self-taught coder and cyber-enthusiast exploring both frontend development and the hidden layers of the internet. I create web experiences, build bots, and occasionally dive into anonymous environments for ethical curiosity.</p>
+        </div>
+      </section>
+  
+      <section id="skills" class="skills" data-aos="fade-up">
+        <div class="container">
+          <h2 class="section-title">My Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-html5"></i><span>HTML5</span></div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="300"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="400"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="500"><i class="fas fa-robot"></i><span>Automation</span></div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="600"><i class="fas fa-user-secret"></i><span>Anon Research</span></div>
+          </div>
+        </div>
+      </section>
+  
+      <section id="contact" class="contact" data-aos="fade-up">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="contact-cards">
+            <a class="contact-card" href="https://wa.me/18257733821"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+            <a class="contact-card" href="https://t.me/X_FearleSs_Men"><i class="fab fa-telegram"></i><span>Telegram</span></a>
+            <a class="contact-card" href="mailto:yousaf@example.com"><i class="fas fa-envelope"></i><span>Email</span></a>
+          </div>
+        </div>
+      </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="social-icons">
+       
+      <p>&copy; 2025 Yousaf. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    const hamburger = document.getElementById('hamburger-menu');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      const icon = hamburger.querySelector('i');
+      if (navMenu.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    });
+  </script>
+</body>
+</html>
